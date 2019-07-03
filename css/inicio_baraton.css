@@ -1,0 +1,261 @@
+*{
+	margin:0px;
+	padding:0px;
+	justify-content: center;
+}
+
+/*menu*/
+div#titulo{
+	width:100%;
+	margin-top:100px;
+	font-family: Fixedsys;
+	font-size: 20px;
+}
+
+p#header{
+	text-align: center;
+	font-size: 2.5em;
+	color:rgb(255, 255, 255);
+}
+
+p#subheader{
+	text-align: center;
+	color:rgb(255, 255, 255);
+	margin-top:20px;
+	font-size: 1.3em;
+}
+
+header{
+	resolution: 20px auto;
+	width:1200px;
+	height:230px;
+	background-color:transparent;
+}
+
+div.contenedor{
+	width: 200px;
+	height: 230px;
+	float:left;
+	position:relative;
+	background-position: 100px;
+	right:0 ;
+	-webkit-transition: height .4s;
+	
+}
+
+div#uno{
+	background-color: rgb(0, 174, 255)  ;
+}
+
+div#dos{
+	background-color: rgb(0, 255, 136);
+}
+
+div#tres{
+	background-color: rgb(0, 255, 234);
+}
+
+div#cuatro{
+	background-color: rgb(0, 255, 136)  ;
+}
+
+div#cinco{
+	background-color:rgb(0, 174, 255) ;
+}
+
+
+
+img.icon{
+	display: block;
+	margin:50px auto;
+	background-color: rgba(255,255,255,.100);
+	width:40px;
+	padding:20px;
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition: box-shadow .4s;
+}
+
+p.href{
+	font-size: 1.2em;
+	color:black;
+	text-align: center;
+	padding-top:10px;
+	opacity: .6;
+	-webkit-transition: padding-top .4s;
+}
+
+div.contenedor:hover{
+	height:250px;
+}
+
+div.contenedor:hover p.texto{
+	padding-top: 30px;
+	opacity: 1;
+}
+
+div.contenedor:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+}
+
+
+/*pie de pagina*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #0e0d0d;
+    border-top: 2px solid rgb(6, 150, 37);
+    position: relative;
+    bottom: 0;
+	font-family: Helvetica Neue;
+    color: white;
+}
+
+
+/*fondo*/
+
+body{
+	
+	background-image: url(../pictures/paisaje/lll.jpg); 
+	 /*background-color: rgb(194, 149, 66);*/
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	 background-attachment: fixed;
+}
+
+/*boton*/
+#inicio{
+	color: black;
+	font-family: Script MT;
+	font-size: 22px;
+}
+
+
+
+
+/*carrousel*/
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 750px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel :hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    transition: all 100ms;
+}
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 20px 0px rgb(1, 60, 255);
+    transition: all 100ms;
+}
+
+
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg)
+    translateZ(300px);
+} 
+.content-carrousel figure:nth-child(10){
+    transform: rotateY(360deg)
+    translateZ(300px);
+} 
+
+
+
+.content-carrousel img{
+    width: 100%;
+    
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+
+}
+
+
+
+
+
+
+/*contenedor de carrousel y menu*/
+div#vacio{
+	width: 100%;
+	height: 120px;
+}
+div#menu{
+	width: 100%;
+	height: 120px;
+	background-color: transparent;
+}
+div#contenedor{
+	width: 100%;
+	height: 230px;
+	background-color:transparent;
+}
+div#body{
+	margin: auto;
+	width: 1000px;
+	height: 230px;
+	background-color:transparent;
+}
